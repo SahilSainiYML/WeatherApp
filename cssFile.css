@@ -4,13 +4,13 @@
 .container {
   display: flex;
   height: 100vh;
+  align-items: center;
 }
 
 .mainview {
   display: flex;
   justify-content: center;
-  background-color: aqua;
-  width: 60%;
+  width: 75%;
   align-items: center;
 }
 
@@ -19,6 +19,12 @@
   justify-content: center;
   max-height: 10%;
   margin: 0;
+  align-items: center;
+  gap: 5px;
+}
+
+#temp {
+  font-size: 50px;
 }
 
 .locationTime {
@@ -44,6 +50,55 @@
 
 .detailview {
   display: flex;
-  background-color: gray;
-  width: 40%;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 25%;
+  height: 50vh;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.search {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  color: aliceblue;
+}
+
+.weather_details {
+  font-size: xx-large;
+}
+
+.backgroundImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+}
+.Clear {
+  background-image: url("./Clear.jpg");
+}
+.Sunny {
+  background-image: url("./Sunny.png");
+}
+.Rainy {
+  background-image: url("./Rainy.jpg");
+}
+
+.Mist {
+  background-image: url("./Mist.jpg");
+}
+.Overcast {
+  background-image: url("./Overcast.jpg");
+}
+
+.Partly {
+  background-image: url("./Partly\ cloudy.jpg");
 }
