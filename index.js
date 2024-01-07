@@ -28,7 +28,7 @@ btn.addEventListener("click", (event) => {
 
 function fetchWeatherData(cityName) {
   fetch(
-    `http://api.weatherapi.com/v1/current.json?key=13e228fadea544f2a28143117232912&q=${cityName}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=13e228fadea544f2a28143117232912&q=${cityName}&aqi=no`
   )
     .then((resp) => resp.json())
     .then((data) => updateUI(data))
